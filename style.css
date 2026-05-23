@@ -605,6 +605,59 @@ footer {
 
 .btn-cta-wa:hover { background: #1ebe5d; }
 
+/* ===== BROSH DIGITAL ===== */
+#brosh-digital {
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1400 100%);
+  padding: 100px 0;
+  border-top: 1px solid rgba(201,168,76,0.2);
+}
+
+.digital-header { text-align: center; margin-bottom: 16px; }
+
+.digital-sub {
+  text-align: center;
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.digital-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.digital-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 8px;
+  padding: 36px 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.digital-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(201,168,76,0.15);
+}
+
+.digital-icon { font-size: 40px; margin-bottom: 16px; }
+
+.digital-card h3 {
+  color: var(--gold);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.digital-card p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
