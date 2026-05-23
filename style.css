@@ -626,6 +626,53 @@ footer {
 
 .btn-cta-wa:hover { background: #1ebe5d; }
 
+/* ===== EXTRA SERVICES ===== */
+#extra-services {
+  background: var(--dark2);
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.extra-sub {
+  text-align: center;
+  color: var(--gray);
+  font-size: 15px;
+  margin-top: -20px;
+  margin-bottom: 48px;
+}
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.extra-card {
+  border: 1px solid rgba(201,168,76,0.2);
+  padding: 36px 32px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.extra-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 30px rgba(201,168,76,0.1);
+}
+
+.extra-card h3 {
+  color: var(--gold);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.extra-card p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 /* ===== STATS ===== */
 #stats {
   background: var(--dark2);
