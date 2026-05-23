@@ -626,6 +626,41 @@ footer {
 
 .btn-cta-wa:hover { background: #1ebe5d; }
 
+/* ===== STATS ===== */
+#stats {
+  background: var(--dark2);
+  padding: 60px 0;
+  border-top: 1px solid rgba(201,168,76,0.15);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-num {
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: var(--gray);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /* ===== BROSH DIGITAL ===== */
 #brosh-digital {
   background: linear-gradient(135deg, #0d0d0d 0%, #1a1400 100%);
