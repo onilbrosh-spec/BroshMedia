@@ -85,6 +85,18 @@ function showPortfolio(cat) {
 // Form submit
 function submitForm(e) {
   e.preventDefault();
-  alert('תודה! אחזור אליך בהקדם.');
-  e.target.reset();
+  const form = e.target;
+  const data = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  })
+    .then(() => {
+      alert('תודה! אחזור אליך בהקדם.');
+      form.reset();
+    })
+    .catch(() => {
+      alert('משהו השתבש בשליחה. אפשר לפנות בטלפון או במייל בינתיים.');
+    });
 }

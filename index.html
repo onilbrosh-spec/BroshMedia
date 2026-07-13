@@ -549,12 +549,13 @@
           <p>✉️ <a href="mailto:onil.brosh@gmail.com">onil.brosh@gmail.com</a></p>
           <a href="https://wa.me/972522674041" target="_blank" class="btn-whatsapp">💬 שלח וואטסאפ</a>
         </div>
-        <form class="contact-form" onsubmit="submitForm(event)">
-          <input type="text" placeholder="שם מלא" required>
-          <input type="text" placeholder="חברה / ארגון">
-          <input type="tel" placeholder="טלפון" required>
-          <input type="email" placeholder="מייל">
-          <textarea placeholder="ספר לי במה אני יכול לעזור..."></textarea>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="submitForm(event)">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="text" name="name" placeholder="שם מלא" required>
+          <input type="text" name="company" placeholder="חברה / ארגון">
+          <input type="tel" name="phone" placeholder="טלפון" required>
+          <input type="email" name="email" placeholder="מייל">
+          <textarea name="message" placeholder="ספר לי במה אני יכול לעזור..."></textarea>
           <button type="submit" class="btn-primary">שלח פנייה</button>
         </form>
       </div>
